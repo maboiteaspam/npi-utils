@@ -1,6 +1,6 @@
 {
   "name": "@maboiteaspam/npi-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "npi utils to build the stream",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
