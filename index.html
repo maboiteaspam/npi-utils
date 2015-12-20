@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Npi-utils by maboiteaspam</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Npi-utils</h1>
+        <h2>npi utils to build the stream</h2>
+        <a href="https://github.com/maboiteaspam/npi-utils" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="npi-utils" class="anchor" href="#npi-utils" aria-hidden="true"><span class="octicon octicon-link"></span></a>npi-utils</h1>
+
+<p>npi utils to build the stream</p>
+
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<pre><code>npm i @maboiteaspam/npi-utils --save
+</code></pre>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> bubble  <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>@maboiteaspam/npi-utils/bubble<span class="pl-pds">'</span></span>);
+<span class="pl-k">var</span> spawn   <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>@maboiteaspam/npi-utils/spawn<span class="pl-pds">'</span></span>);
+<span class="pl-k">var</span> router  <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>stream-message-router<span class="pl-pds">'</span></span>)
+
+<span class="pl-k">var</span> npi <span class="pl-k">=</span> <span class="pl-en">router</span>(<span class="pl-s"><span class="pl-pds">'</span>npi<span class="pl-pds">'</span></span>);
+
+npi
+  .<span class="pl-en">pipe</span>(<span class="pl-en">spawn</span>(<span class="pl-s"><span class="pl-pds">'</span>npm<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>init<span class="pl-pds">'</span></span> , <span class="pl-s"><span class="pl-pds">'</span>--yes<span class="pl-pds">'</span></span>))
+  .<span class="pl-en">pipe</span>(<span class="pl-en">bubble</span>(<span class="pl-s"><span class="pl-pds">'</span>message<span class="pl-pds">'</span></span>, {message<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>file<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>body<span class="pl-pds">'</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">'</span>package.json<span class="pl-pds">'</span></span>}))
+</pre></div>
+
+<h2>
+<a id="read-more" class="anchor" href="#read-more" aria-hidden="true"><span class="octicon octicon-link"></span></a>Read more</h2>
+
+<ul>
+<li><a href="https://github.com/maboiteaspam/npi">https://github.com/maboiteaspam/npi</a></li>
+<li><a href="https://github.com/maboiteaspam/stream-messenger">https://github.com/maboiteaspam/stream-messenger</a></li>
+<li><a href="https://github.com/maboiteaspam/stream-message-router">https://github.com/maboiteaspam/stream-message-router</a></li>
+<li><a href="https://github.com/maboiteaspam/flower">https://github.com/maboiteaspam/flower</a></li>
+<li><a href="https://github.com/maboiteaspam/bubbler">https://github.com/maboiteaspam/bubbler</a></li>
+<li><a href="https://github.com/maboiteaspam/bubbled">https://github.com/maboiteaspam/bubbled</a></li>
+<li><a href="https://github.com/maboiteaspam/event-stream-writer">https://github.com/maboiteaspam/event-stream-writer</a></li>
+</ul>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/maboiteaspam/npi-utils/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/maboiteaspam/npi-utils/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/maboiteaspam/npi-utils"></a> is maintained by <a href="https://github.com/maboiteaspam">maboiteaspam</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
