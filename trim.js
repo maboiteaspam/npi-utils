@@ -1,5 +1,5 @@
 
-var streamMsger = require('stream-messenger')
+var streamMsger = require('@maboiteaspam/stream-messenger')
 var trim        = require('trim')
 
 module.exports = function trimT (obj, prop) {

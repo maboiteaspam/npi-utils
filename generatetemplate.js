@@ -2,7 +2,7 @@
 var path  = require('path');
 var fs    = require('fs');
 var _     = require('lodash')
-var streamMsger = require('stream-messenger')
+var streamMsger = require('@maboiteaspam/stream-messenger')
 
 module.exports = function generateTemplate(tplPath, file, vars) {
 

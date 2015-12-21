@@ -1,6 +1,6 @@
 
 var fs = require('fs');
-var streamMsger = require('stream-messenger')
+var streamMsger = require('@maboiteaspam/stream-messenger')
 
 module.exports = function touch (file, content) {
 

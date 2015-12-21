@@ -1,6 +1,6 @@
 
 var spawn       = require('spawn-cmd').spawn;
-var streamMsger = require('stream-messenger')
+var streamMsger = require('@maboiteaspam/stream-messenger')
 
 module.exports = function spawnT (bin, args, opts, copyFn) {
 

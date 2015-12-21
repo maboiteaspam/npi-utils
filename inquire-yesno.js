@@ -1,6 +1,6 @@
 
 var inquirer = require('inquirer');
-var streamMsger = require('stream-messenger')
+var streamMsger = require('@maboiteaspam/stream-messenger')
 
 module.exports = function inquireYesNo (what, defaultValue, then) {
 

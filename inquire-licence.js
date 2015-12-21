@@ -1,7 +1,7 @@
 
 var inquirer = require('inquirer');
 var _ = require('lodash');
-var streamMsger = require('stream-messenger')
+var streamMsger = require('@maboiteaspam/stream-messenger')
 
 module.exports = function chooseLicence (what, obj, property, licences) {
 
