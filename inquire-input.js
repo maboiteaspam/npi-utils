@@ -32,4 +32,33 @@ inquireInput.handle = function (what, fn) {
 
 }
 
+inquireInput.ifFalsy = function (what, obj, property) {
+
+  var fnTransform = function (chunk, enc, cb) {
+
+    if (!(property in obj) || !obj[property]) {
+
+      var questions = [
+        {
+          type: "input",
+          name: "response",
+          message: what
+        }
+      ];
+
+      inquirer.prompt( questions, function( answers ) {
+        obj[property] = answers['response']
+        cb(null, chunk)
+      });
+
+    } else {
+      cb(null, chunk)
+    }
+
+  };
+
+  return streamMsger('inquire', fnTransform);
+
+}
+
 module.exports = inquireInput;
