@@ -1,6 +1,6 @@
 {
   "name": "@maboiteaspam/npi-utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "npi utils to build the stream",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -22,7 +22,7 @@
   "license": "WTF",
   "bin": {},
   "dependencies": {
-    "@maboiteaspam/stream-messenger": "^2.0.0",
+    "@maboiteaspam/stream-messenger": ">=2.0.0 <3.0.0-0",
     "inquirer": ">=0.11.0 <1.0.0-0",
     "lodash": ">=3.10.1 <4.0.0-0",
     "spawn-cmd": "0.0.2",
