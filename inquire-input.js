@@ -32,6 +32,7 @@ inquireInput.handle = function (what, fn) {
 
 }
 
+// copy paste with inquire-license until more refactoring.
 inquireInput.ifFalsy = function (what, obj, property) {
 
   var fnTransform = function (chunk, enc, cb) {
